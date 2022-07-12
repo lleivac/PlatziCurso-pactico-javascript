@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./figuras.css">
+  <title>Figuras Geométricas | Curso practico de Javascript en Platzi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+        <div class="form-container"> 
+            <h1 class="title">Figuras Geométricas</h1>
+            <p class="subtitle" >Este es el primer taller del curso práctico de JavaScript</p>
+        </div>
+      <form action="/" class="form">
+        <div class="card-geometricos">
+          <h2 class="title-2">Cuadrado</h2>
+             <label for="inputCuadrado">Perímetro: </label>
+             <input id="inputCuadrado" type="number" class= "input" autofocus="">
+             <input type="button" onclick=calcularPerimetroCuadrado() class="primary" value="Calcular el perimetro">
+             
+             <label for="areaCuadrado" >Area: </label>
+             <input id="areaCuadrado" type="number" class="input">
+             <input type="button" onclick=calcularAreaCuadrado() class="primary" value=" Calcular el área">
+
+             <label for="resultadoPerimetroCuadrado">Resultado Perímetro/Area: </label>
+             <input type="text" id="resultadoCuadrado" class="resultado">
+             <input type="button" onclick=limpiarInput() id="limpiar" value="Limpiar">
+        </div> 
+        <div class="card-geometricos">
+          <h2 class="title-2">Triángulo</h2>
+          
+            <label for="perimetroTriangulo">Perímetro: </label>
+            <input id="perimetroTriangulolado1" type="number" class= "input" placeholder="lado1">
+            <input id="perimetroTriangulolado2" type="number" class= "input" placeholder="lado2">
+            <input id="perimetroTrianguloBase" type="number" class= "input" placeholder="base">
+            <input type="button" onclick=calcularPerimetroTriangulo() class="primary" value="Calcular el perímetro">
+          
+
+             <label for="areaTriangulo">Area: </label>
+             <input id="baseTriangulo" type="number" class="input" placeholder="base">
+             <input id="alturaTriangulo" type="number" class="input" placeholder="altura">
+             <input type="button" onclick=calcularAreaTriangulo() class="primary" value=" Calcular el área">
+             <label for="resultadoTriangulo">Resultado Perímetro/Area: </label>
+             <input type="text" id="Triangulo" class="resultado">
+             <input type="button" onclick=limpiarInput() id="limpiar" value="Limpiar">
+
+        </div> 
+        <div class="card-geometricos">
+          <h2 class="title-2">Círculo</h2>
+             <label for="diametroCirculo">Diámetro: </label>
+             <input id="diametroCirculo" type="number" class= "input">
+             <input type="button" onclick="calcularDiametroCirculo()" class="primary" value="Calcular diametro">
+
+             <label for="perimetroCirculo">Perímetro: </label>
+             <input id="perimetroCirculo" type="number" class="input">
+             <input type="button" onclick=calcularPerimetroCirculo() class="primary" value="Calcular el perimetro">
+
+             <label for="areaCirculo">Area: </label>
+             <input id="areaCirculo" type="number" class="input">
+             <input type="button" onclick=calcularAreaCirculo() class="primary" value=" Calcular el area">
+             <label for="resultadoCirculo">Resultado Diámetro/Perímetro/Area: </label>
+             <input type="text" id="resultadoCirculo" class="resultado">
+             <input type="button" onclick=limpiarInput() id="limpiar" value="Limpiar">
+
+        </div>
+      </form>
+  </div>
+  <script src="./figuras.js"></script>
+
+</body>
+</html>

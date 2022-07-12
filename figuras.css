@@ -1,0 +1,96 @@
+:root{
+  --white: #ffffff;
+  --black: #000000;
+  --very-light-pink:#c7c7c7;
+  --text-input-field:#f7f7f7;
+  --hospital-green: #ACD9B2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+
+
+}
+body{
+  margin: 0;
+  font-family: 'Quicksand', sans-serif ;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background: var(--text-input-field);
+}
+.form-container{
+  display: flex;
+  flex-direction: column;  
+}
+.form-container > h1, p{
+  text-align: center;
+  margin-top:auto;
+}
+.form{
+  display:flex;
+  justify-content: space-around;
+}
+.card-geometricos{
+  margin-top: 20px;
+  width: 400px;
+  height: 500px;
+  background: papayawhip;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card-geometricos > .title-2{
+  width: 100%;
+  text-align: center;
+}
+label{
+  font-size: var(--md);
+  font-weight: bold;
+  margin:20px 0 0 40px;
+}
+.input{
+  border: none;
+  border-radius: 8px;
+  height: 15px;
+  font-size: var(--md);
+  padding: 6px;
+  margin-bottom: 12px;
+  width: 80px;
+  margin-left: 40px;
+}
+.primary{
+  background: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color:var(--white);
+  width: 50%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 40px;
+  margin-left: 40px;
+}
+.resultado{
+  width: 120px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background:var(--text-input-field);
+  margin-left: 40px;
+}
+#limpiar{
+  width:50%;
+  height: 30px;
+  margin-top: 20px;
+  background:var(--hospital-green);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: var(--lg);
+  margin-left: 40px;
+  border-style: none;
+  color:var(--white);
+  font-size: var(--md);
+  font-weight: bold;
+}
